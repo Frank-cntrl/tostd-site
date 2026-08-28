@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Didot", "Bodoni MT", "Playfair Display", Georgia, "Times New Roman", serif;
+  --color-ink: #0a0a0a;
+  --color-surface: #141414;
+  --color-edge: #262626;
+  --color-accent: #f5b942;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-neutral-300);
+  -webkit-font-smoothing: antialiased;
+}
