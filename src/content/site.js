@@ -154,7 +154,7 @@ export const site = {
           attribution: 'Tupac Shakur',
         },
       ],
-      closing: 'Welcome, friends, to The One Stop Drop. The ocean awaits.',
+      closing: 'Welcome, friends, to The One Stop Drop.',
     },
   },
   team: {
