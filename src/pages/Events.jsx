@@ -12,7 +12,15 @@ export default function Events() {
         <div className="space-y-14">
           {events.list.map((e) => (
             <div key={e.id} className="grid items-start gap-8 border-t border-edge pt-8 lg:grid-cols-[2fr_3fr]">
-              <Placeholder label={`${e.kind} — event photo`} ratio="aspect-video" />
+              {e.image ? (
+                <img
+                  src={e.image}
+                  alt={e.title}
+                  className="aspect-video w-full rounded-md object-cover"
+                />
+              ) : (
+                <Placeholder label={`${e.kind} — event photo`} ratio="aspect-video" />
+              )}
               <div>
                 <p className="text-xs uppercase tracking-widest text-neutral-500">
                   {e.kind} · {e.date}

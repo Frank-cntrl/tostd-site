@@ -46,10 +46,18 @@ export default function ArtistProfile() {
               <div className="grid gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
                 {artist.works.map((w) => (
                   <div key={w.title}>
-                    <Placeholder
-                      label={artist.discipline === 'Music' ? 'Cover art' : 'Artwork'}
-                      ratio="aspect-square"
-                    />
+                    {w.image ? (
+                      <img
+                        src={w.image}
+                        alt={w.title}
+                        className="aspect-square w-full rounded-md object-cover"
+                      />
+                    ) : (
+                      <Placeholder
+                        label={artist.discipline === 'Music' ? 'Cover art' : 'Artwork'}
+                        ratio="aspect-square"
+                      />
+                    )}
                     <p className="mt-3 text-sm text-white">{w.title}</p>
                     <p className="text-xs text-neutral-500">{w.kind}</p>
                     <div className="mt-2 flex items-center justify-between">

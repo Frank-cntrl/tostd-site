@@ -10,9 +10,9 @@ export const artists = [
     bio: 'Artist bio coming soon — each artist on the roster receives a personalized introduction from our founder.',
     contact: { email: 'Email coming soon', instagram: '@handle-tba' },
     works: [
-      { title: 'Untitled (Small Work) 01', kind: 'Drawing', price: '$1,000' },
-      { title: 'Untitled (Small Work) 02', kind: 'Painting', price: '$1,000' },
-      { title: 'Untitled (Small Work) 03', kind: 'Painting', price: '$1,000' },
+      { title: 'Untitled (Small Work) 01', kind: 'Painting', price: '$1,000', image: '/photos/work-a1.jpg' },
+      { title: 'Untitled (Small Work) 02', kind: 'Painting', price: '$1,000', image: '/photos/work-a2.jpg' },
+      { title: 'Untitled (Small Work) 03', kind: 'Painting', price: '$1,000', image: '/photos/work-a3.jpg' },
     ],
     shows: [
       { date: 'Month 4', title: '"Death & Rebirth Walk Into A Bar"', venue: "TOST'D Pop-Up Gallery" },
@@ -26,8 +26,8 @@ export const artists = [
     bio: 'Artist bio coming soon — each artist on the roster receives a personalized introduction from our founder.',
     contact: { email: 'Email coming soon', instagram: '@handle-tba' },
     works: [
-      { title: 'Untitled (Small Work) 01', kind: 'Mixed media', price: '$1,000' },
-      { title: 'Untitled (Small Work) 02', kind: 'Drawing', price: '$1,000' },
+      { title: 'Untitled (Small Work) 01', kind: 'Mixed media', price: '$1,000', image: '/photos/work-b1.jpg' },
+      { title: 'Untitled (Small Work) 02', kind: 'Mixed media', price: '$1,000', image: '/photos/work-b2.jpg' },
     ],
     shows: [
       { date: 'Month 4', title: '"Death & Rebirth Walk Into A Bar"', venue: "TOST'D Pop-Up Gallery" },
@@ -41,8 +41,8 @@ export const artists = [
     bio: 'Artist bio coming soon — each artist on the roster receives a personalized introduction from our founder.',
     contact: { email: 'Email coming soon', instagram: '@handle-tba' },
     works: [
-      { title: 'Untitled (Small Work) 01', kind: 'Painting', price: '$1,000' },
-      { title: 'Untitled (Small Work) 02', kind: 'Painting', price: '$1,000' },
+      { title: 'Untitled (Small Work) 01', kind: 'Painting', price: '$1,000', image: '/photos/work-c1.jpg' },
+      { title: 'Untitled (Small Work) 02', kind: 'Painting', price: '$1,000', image: '/photos/work-c2.jpg' },
     ],
     shows: [
       { date: 'Month 4', title: '"Death & Rebirth Walk Into A Bar"', venue: "TOST'D Pop-Up Gallery" },

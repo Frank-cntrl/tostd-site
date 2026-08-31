@@ -1,4 +1,4 @@
-export const site = {
+﻿export const site = {
   brand: {
     name: 'The One Stop Drop',
     short: "TOST'D",
@@ -27,6 +27,7 @@ export const site = {
     list: [
       {
         id: 'launch-party',
+        image: '/photos/launch.jpg',
         title: "TOST'D Launch Party",
         kind: 'Launch',
         date: 'Date TBA',
@@ -36,6 +37,7 @@ export const site = {
       },
       {
         id: 'first-show-the-stand',
+        image: '/photos/stand.jpg',
         title: 'First Show @ The Stand',
         kind: 'Comedy',
         date: 'Date TBA',
@@ -45,6 +47,7 @@ export const site = {
       },
       {
         id: 'monthly-comedy',
+        image: '/photos/residency.jpg',
         title: 'Monthly Comedy Residencies',
         kind: 'Comedy',
         date: 'Monthly',
@@ -54,6 +57,7 @@ export const site = {
       },
       {
         id: 'music-nights',
+        image: '/photos/music.jpg',
         title: 'Music Nights',
         kind: 'Music',
         date: 'Monthly',
@@ -63,6 +67,7 @@ export const site = {
       },
       {
         id: 'death-and-rebirth',
+        image: '/photos/exhibition.jpg',
         title: '"Death & Rebirth Walk Into A Bar"',
         kind: 'Fine Art',
         date: 'Month 4 — month-long',
