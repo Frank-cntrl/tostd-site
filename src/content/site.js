@@ -169,6 +169,7 @@
         name: 'Brian D. Morris',
         role: 'CEO & Founder',
         bio: 'Bio coming soon.',
+        photo: '/photos/brian.jpg',
       },
       {
         name: 'Jesse LaVercombe',

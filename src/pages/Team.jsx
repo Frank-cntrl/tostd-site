@@ -15,7 +15,15 @@ export default function Team() {
               key={`${m.name}-${i}`}
               className="grid items-start gap-8 border-t border-edge pt-8 sm:grid-cols-[180px_1fr]"
             >
-              <Placeholder label="Photo" ratio="aspect-square" />
+              {m.photo ? (
+                <img
+                  src={m.photo}
+                  alt={m.name}
+                  className="aspect-square w-full rounded-md object-cover"
+                />
+              ) : (
+                <Placeholder label="Photo" ratio="aspect-square" />
+              )}
               <div>
                 <h2 className="text-lg font-medium text-white">{m.name}</h2>
                 <p className="text-xs uppercase tracking-widest text-neutral-500">{m.role}</p>
