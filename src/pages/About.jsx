@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import GalleryGrid from '../components/GalleryGrid'
 import { site } from '../content/site'
@@ -26,7 +27,15 @@ export default function About() {
       <section className="border-t border-edge">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
           <h2 className="mb-8 font-display text-3xl text-white sm:text-4xl">From the galleries</h2>
-          <GalleryGrid />
+          <GalleryGrid limit={8} />
+          <div className="mt-8">
+            <Link
+              to="/gallery"
+              className="rounded-sm border border-neutral-600 px-6 py-3 text-sm font-semibold uppercase tracking-widest text-white transition-colors hover:border-accent hover:text-accent"
+            >
+              View All
+            </Link>
+          </div>
         </div>
       </section>
 

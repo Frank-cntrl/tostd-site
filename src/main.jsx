@@ -9,6 +9,7 @@ import ArtistProfile from './pages/ArtistProfile'
 import Events from './pages/Events'
 import Watch from './pages/Watch'
 import About from './pages/About'
+import Gallery from './pages/Gallery'
 import Team from './pages/Team'
 import NotFound from './pages/NotFound'
 import './index.css'
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
       { path: 'events', element: <Events /> },
       { path: 'watch', element: <Watch /> },
       { path: 'about', element: <About /> },
+      { path: 'gallery', element: <Gallery /> },
       { path: 'team', element: <Team /> },
       { path: '*', element: <NotFound /> },
     ],

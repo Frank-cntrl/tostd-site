@@ -3,8 +3,9 @@ import { useCallback, useEffect, useState } from 'react'
 const COUNT = 54
 const ids = Array.from({ length: COUNT }, (_, i) => `g${String(i + 1).padStart(2, '0')}`)
 
-export default function GalleryGrid() {
+export default function GalleryGrid({ limit }) {
   const [open, setOpen] = useState(null)
+  const shown = limit ? ids.slice(0, limit) : ids
   const prev = useCallback(() => setOpen((i) => (i + COUNT - 1) % COUNT), [])
   const next = useCallback(() => setOpen((i) => (i + 1) % COUNT), [])
 
@@ -26,7 +27,7 @@ export default function GalleryGrid() {
   return (
     <>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-        {ids.map((id, i) => (
+        {shown.map((id, i) => (
           <button
             key={id}
             type="button"
