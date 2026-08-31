@@ -1,4 +1,5 @@
 import PageHeader from '../components/PageHeader'
+import GalleryGrid from '../components/GalleryGrid'
 import { site } from '../content/site'
 
 const { about } = site
@@ -25,16 +26,7 @@ export default function About() {
       <section className="border-t border-edge">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
           <h2 className="mb-8 font-display text-3xl text-white sm:text-4xl">From the galleries</h2>
-          <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-            {['gal1', 'gal2', 'gal3', 'gal4', 'gal5', 'gal6', 'gal7', 'launch'].map((g) => (
-              <img
-                key={g}
-                src={`/photos/${g}.jpg`}
-                alt="Gallery exhibition"
-                className="aspect-[4/3] w-full rounded-md object-cover"
-              />
-            ))}
-          </div>
+          <GalleryGrid />
         </div>
       </section>
 
