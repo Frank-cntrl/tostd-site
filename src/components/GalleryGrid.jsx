@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 
-const COUNT = 30
+const COUNT = 65
 const ids = Array.from({ length: COUNT }, (_, i) => `g${String(i + 1).padStart(2, '0')}`)
 
 export default function GalleryGrid({ limit }) {
