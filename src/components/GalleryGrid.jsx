@@ -36,7 +36,7 @@ export default function GalleryGrid({ limit }) {
             aria-label={`Enlarge gallery photo ${i + 1}`}
           >
             <img
-              src={`/photos/gallery/thumbs/${id}.jpg`}
+              src={`/photos/gallery/thumbs/${id}.jpg?v=2`}
               alt={`Gallery photo ${i + 1}`}
               loading="lazy"
               className="aspect-[4/3] w-full rounded-md object-cover"
@@ -51,7 +51,7 @@ export default function GalleryGrid({ limit }) {
           onClick={() => setOpen(null)}
         >
           <img
-            src={`/photos/gallery/${ids[open]}.jpg`}
+            src={`/photos/gallery/${ids[open]}.jpg?v=2`}
             alt={`Gallery photo ${open + 1}`}
             className="max-h-full max-w-full rounded-md object-contain"
             onClick={(e) => e.stopPropagation()}
