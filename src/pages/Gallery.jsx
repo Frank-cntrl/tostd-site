@@ -7,7 +7,7 @@ export default function Gallery() {
       <PageHeader
         eyebrow="A Glimpse from the Past"
         title="Gallery"
-        intro="Exhibitions, artworks, and moments from two decades of shows and events across NYC and beyond. Click any photo to enlarge it."
+        intro="Exhibitions, artworks, and lineups from two decades of shows and events across NYC. Click any photo to enlarge it."
       />
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
         <GalleryGrid />
