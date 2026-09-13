@@ -21,12 +21,24 @@ function Media({ film }) {
       href={film.url}
       target="_blank"
       rel="noreferrer"
-      className="group flex aspect-video w-full flex-col items-center justify-center gap-5 rounded-md border border-edge bg-surface p-8 text-center transition-colors hover:border-neutral-500"
+      className="group relative block aspect-video w-full overflow-hidden rounded-md border border-edge transition-colors hover:border-neutral-500"
     >
-      <p className="font-display text-2xl text-white sm:text-3xl">{film.tagline}</p>
-      <span className="border-b border-accent pb-0.5 text-xs font-semibold uppercase tracking-widest text-accent">
-        Visit the {film.mediaLabel}
-      </span>
+      {film.video && (
+        <video
+          src={film.video}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      )}
+      <div className="absolute inset-0 flex flex-col items-center justify-center gap-5 bg-black/50 p-8 text-center transition-colors group-hover:bg-black/35">
+        <p className="font-display text-2xl text-white sm:text-3xl">{film.tagline}</p>
+        <span className="border-b border-accent pb-0.5 text-xs font-semibold uppercase tracking-widest text-accent">
+          Visit the {film.mediaLabel}
+        </span>
+      </div>
     </a>
   )
 }
