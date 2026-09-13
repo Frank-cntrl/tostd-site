@@ -26,7 +26,7 @@ export default function About() {
       {/* From the galleries */}
       <section className="border-t border-edge">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
-          <h2 className="mb-8 font-display text-3xl text-white sm:text-4xl">From the galleries</h2>
+          <h2 className="mb-8 font-display text-3xl text-white sm:text-4xl">A Glimpse from the Past</h2>
           <GalleryGrid limit={8} />
           <div className="mt-8">
             <Link

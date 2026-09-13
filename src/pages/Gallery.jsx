@@ -5,7 +5,7 @@ export default function Gallery() {
   return (
     <>
       <PageHeader
-        eyebrow="From the Galleries"
+        eyebrow="A Glimpse from the Past"
         title="Gallery"
         intro="Exhibitions, artworks, and moments from two decades of shows and events across NYC and beyond. Click any photo to enlarge it."
       />
